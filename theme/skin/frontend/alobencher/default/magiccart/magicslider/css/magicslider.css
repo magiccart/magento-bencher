@@ -1,0 +1,157 @@
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700,700italic,900,900italic);
+
+.magicslider{padding:0px;margin:0;}
+.magicslider .bx-wrapper{margin: 0; padding: 0}
+.bx-wrapper .bx-caption {display:none;}
+.magicslider .bx-wrapper .bx-pager.bx-default-pager a {background-color: #fff;border-color: #fff;}
+.magicslider .bx-wrapper .bx-pager.bx-default-pager a:hover, .magicslider .bx-wrapper .bx-pager.bx-default-pager a.active {background-color: rgba(0, 0, 0, 0);border-color: #fff;}
+.bx-wrapper .bx-caption.start, .bx-wrapper .bx-caption.play {bottom: 0;display: block;left: 0;position: absolute; right: 0;top: 0;}
+.magicslider .bx-wrapper .item a{position: relative;z-index: 1;}
+.text-slide {position: absolute; opacity: 0; display: none; visibility: hidden; z-index: 2}
+.play .text-slide { display:block;opacity: 1; visibility: visible;}
+
+
+/*Text slide 1*/
+.bx-caption .text-slide1{top: 43%; left: 45%; text-align: left;}
+.bx-caption .text-slide1 .caption1{font-size: 17px; color: #4d4d4d; text-transform: uppercase; font-weight: normal;}
+.bx-caption .text-slide1 .caption2{font-size: 30px; color: #202020; font-weight: bold; text-transform: uppercase; margin-bottom: 25px}
+.bx-caption .text-slide1 .caption3{font-size: 13px; color: #5d5d5d; font-weight: 300; line-height: 20px; width: 88%}
+
+/*Text slide 2*/
+.bx-caption .text-slide2{top: 42%; left: calc(50% - 285px); text-align: center;  padding: 40px 25px}
+.bx-caption .text-slide2:before{content: ""; position: absolute; top: 0; right: 0; left: 0; bottom: 0; border-width: 3px; border-style: solid; border-color: #fff;}
+.bx-caption .text-slide2 .caption1{font-size: 18px; color: #454545; font-weight: 300; text-transform: uppercase; letter-spacing: 3px}
+.bx-caption .text-slide2 .caption2{font-size: 36px; color: #2c2c2c;}
+.bx-caption .text-slide2 .caption3{font-size: 18px; color: #454545; text-transform: uppercase; font-weight: 300; letter-spacing: 3px}
+/*Text slide 3*/
+.bx-caption .text-slide3{top: 50%;}
+.bx-caption .text-slide3 .caption1{font-size: 18px; color: #999999; text-transform: uppercase; font-weight: normal; margin: 0}
+.bx-caption .text-slide3 .caption2{font-size: 33px; color: #202020;}
+
+.bx-caption .slide-action{margin-top: 40px}
+.slide-action .btn-shop {border-width: 1px;border-style: solid;border-color: #171717;display: inline-block;font-size: 13px;font-weight: normal; color: #1f1f1f; line-height: 38px;padding: 0 20px 0 18px;text-transform: uppercase;}
+.slide-action .btn-shop.shop {margin-right: 20px}
+.slide-action .btn-shop:hover{background-color: #171717; color: #fff}
+.bx-caption .text-slide .caption2{text-transform: uppercase; font-weight: bold;}
+
+
+/*Navigation slide*/
+.magicslider .bx-wrapper .bx-controls-direction a{width: 34px; height: 88px; background-color: rgba(255, 255, 255, 0.7); border: 0; border-radius: 0; font-size: 24px; color: #5f5f5f; line-height: 88px; display: block; margin: 0; top: calc(50% - 44px)}
+.magicslider .bx-wrapper .bx-controls-direction a:hover{background-color: rgba(255, 255, 255, 0.9); color: #4b4b4b;}
+.magicslider .bx-wrapper .bx-controls-direction a.bx-next{right: 0}
+.magicslider .bx-wrapper .bx-controls-direction a.bx-prev{left: 0}
+
+
+
+
+/* Slide:Custom font */
+.play .caption2{font-family: 'Playfair Display',sans-serif;}
+
+
+/*animazing slide*/
+.bx-caption.play .text-slide2:before{
+    animation-name: alothemes;
+    -moz-animation-name: alothemes;
+    -webkit-animation-name: alothemes;
+    -o-animation-name: alothemes;
+    animation-duration: 2s;
+    -moz-animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+    -o-animation-duration: 2s;
+}
+@keyframes alothemes{
+    from{transform: scale(0); opacity: 0; visibility: hidden;}
+    to{transform: scale(1); opacity: 1; visibility: visible;}
+}
+.play .text-slide3 .caption1, .play .text-slide3 .caption2, .play .text-slide3 .caption3, .play .text-slide3 .btn-shop {
+    animation-name: zoomOut;
+    -moz-animation-name: zoomOut;
+    -webkit-animation-name: zoomOut;
+    -o-animation-name: zoomOut;
+}
+.play .btn-shop {
+    -moz-animation: fadeInUp 0.8s ease-in 1.9s backwards;
+    -webkit-animation: fadeInUp 0.8s ease-in 1.9s backwards;
+    animation: fadeInUp 0.8s ease-in 1.9s backwards; 
+}
+/*.play .text-slide2 .caption1, .play .text-slide2 .caption3, .play .text-slide2 .btn-shop {animation-name: zoomIn;}
+.play .text-slide2 .caption2{animation-name: zoomOut;}*/
+
+
+.play .caption1{
+    -moz-animation: fadeInRight 0.8s ease-in 1.3s backwards;
+    -webkit-animation: fadeInRight 0.8s ease-in 1s backwards;
+    animation: fadeInRight 0.8s ease-in 1s backwards;
+}
+.play .caption2 {
+    -moz-animation: fadeInLeft 0.8s ease-in 1.5s backwards;
+    -webkit-animation: fadeInLeft 0.8s ease-in 1.5s backwards;
+    animation: fadeInLeft 0.8s ease-in 1.5s backwards;
+}
+.play .caption3{
+    -moz-animation: fadeInUp 0.8s ease-in 1.7s backwards;
+    -webkit-animation: fadeInUp 0.8s ease-in 1.7s backwards;
+    animation: fadeInUp 0.8s ease-in 1.7s backwards;
+}
+.play .caption4 {
+    -moz-animation: fadeInLeft 1s ease-in 2s backwards;
+    -webkit-animation: fadeInLeft 1sease-in 2s backwards;
+    animation: fadeInLeft 1 sease-in 2s backwards;
+}
+
+
+.play .text-slide2 .caption5{
+    -moz-animation: fadeInUp 0.8s ease-in 1.9s backwards;
+    -webkit-animation: fadeInUp 0.8s ease-in 1.9s backwards;
+    animation: fadeInUp 0.8s ease-in 1.9s backwards; opacity:1;
+}
+.play .caption6{
+    -moz-animation: fadeInUp 0.8s ease-in 1.9s backwards;
+    -webkit-animation: fadeInUp 0.8s ease-in 1.9s backwards;
+    animation: fadeInUp 0.8s ease-in 1.9s backwards; opacity:1;
+}
+
+@media (min-width: 992px) and (max-width: 1200px) { 
+    .bx-caption .text-slide1{top: 22%}
+    .bx-caption .text-slide2{top: 30%}
+    .bx-caption .text-slide3{top: 30%}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .bx-caption .text-slide1{top: 24%;}
+    .bx-caption .text-slide1 .caption1{font-size: 15px;}
+    .bx-caption .text-slide1 .caption2{font-size: 22px; margin-bottom: 10px}
+    .bx-caption .slide-action{margin-top: 20px}
+
+    .bx-caption .text-slide2{top: 20%; left: calc(50% - 240px)}
+    .bx-caption .text-slide2 .caption2{font-size: 30px}
+
+
+    .bx-caption .text-slide3{top: 30%}
+    .bx-caption .text-slide3 .caption2{font-size: 30px}
+
+}
+
+@media(max-width:767px) {
+    .bx-caption .text-slide .caption3{display: none;}
+    .bx-caption .slide-action{margin-top: 30px}
+    .bx-caption .text-slide1{top: 25%}
+    .bx-caption .text-slide1 .caption2{font-size: 22px}
+    
+    .bx-caption .text-slide2{top: 15%}
+    .bx-caption .text-slide2 .caption1{font-size: 16px}
+    .bx-caption .text-slide2 .caption2{font-size: 26px}
+    .bx-caption .text-slide2{left: calc(50% - 210px)}
+
+    .bx-caption .text-slide3{top: 18%}
+    .bx-caption .text-slide3 .caption1{font-size: 16px}
+    .bx-caption .text-slide3 .caption2{font-size: 28px}
+
+}
+
+@media only screen and (min-width: 480px) and (max-width: 639px) {
+    .bx-caption .text-slide .caption1{display: none;}
+    .bx-caption .text-slide1 .caption2{font-size: 16px}
+    .bx-caption .text-slide2{padding: 25px}
+    .bx-caption .text-slide3 .caption2{font-size: 22px}
+}
+

@@ -1,0 +1,22 @@
+1.	Update 19/10/2016: Compatible with magento 1.9.3.0
+
+file changed:
+app\code\local\Magiccart\Magicslider\controllers\Adminhtml\MagicsliderController.php
+app\code\local\Magiccart\Magicslider\Block\Adminhtml\Magicslider\Edit\Tab\Gallery.php
+
+app\code\local\Magiccart\Magiccategory\Block\Adminhtml\Manage\Edit\Tab\Gallery.php
+app\code\local\Magiccart\Magiccategory\controllers\Adminhtml\Magiccategory\ManageController.php
+
+app\code\local\Magiccart\Megashop\Block\Adminhtml\Manage\Edit\Tab\Gallery.php
+app\code\local\Magiccart\Megashop\controllers\Adminhtml\Magiccategory\ManageController.php
+
+app\design\adminhtml\default\default\template\magiccart\magicslider\edit\tab\gallery.phtml
+app\design\adminhtml\default\default\template\magiccart\megashop\edit\tab\gallery.phtml
+
+
+2. 02/24/2017 Update fixed API instagram:
+file changed:
+js/magiccart/plugin/jquery.socialstream.js
+app/code/local/Magiccart/Magicsocial/etc/system.xml
+app/code/local/Magiccart/Magicsocial/etc/config.xml
+app/design/frontend/alobencher/default/template/magiccart/magicsocial/socialstream.phtml

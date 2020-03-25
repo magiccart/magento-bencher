@@ -1,0 +1,116 @@
+<?php
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magentocommerce.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magentocommerce.com for more information.
+ *
+ * @category    design
+ * @package     base_default
+ * @copyright   Copyright (c) 2013 Magento Inc. (http://www.magentocommerce.com)
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+/**
+ * @var Mage_Page_Block_Html_Header $this
+ */
+?>
+<div class="header-container">
+	<div class="header">
+		<div class="header-top">
+			<div class="container">
+				 <div class="row">
+					<div class="col-sm-12 col-md-12 col-lg-12 col-xs-12">
+						<div class="top-link top-left">
+							<?php echo $this->getChildHtml('topLinks') ?>
+						</div>
+						<div class="top-right">
+							<div class="top-form-language">
+                                <?php echo $this->getChildHtml('store_language') ?>
+                            </div>
+							<div class="currency_top">
+                    			<?php echo $this->getChildHtml('currency') ?>
+                            </div>
+							<div class="miniCartWrap">
+								<?php echo $this->getChildHtml('ajaxcart'); ?>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header-content header-sticker left-fixed">  <!-- style="display: none;" -->
+			<span class="toggle-tab"><i class="hidden">hidden</i></span>
+			<div class="container-none content toggle-content">
+				<!-- <div class="row"> -->
+					<div class="header-page clearfix">
+						<!-- <div class="col-sm-3 col-md-3 col-lg-3"> -->
+							<div class="header-logo">
+								 <?php if ($this->getIsHomePage()):?>
+									<h1 class="logo">
+										<strong><?php echo $this->getLogoAlt() ?></strong><a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" class="logo1"><img class="img-responsive" src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" /></a>
+									</h1>
+								<?php else:?>
+									<a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" class="logo"><strong><?php echo $this->getLogoAlt() ?></strong><img class="img-responsive" src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" /></a>
+								<?php endif?>
+							</div>
+						<!-- </div> -->
+						<!-- <div class="col-lg-12"> -->
+							<div class="header-menu">
+								<div class="custom-menu">
+									<?php echo $this->getChildHtml('topMenu') ?>
+								</div>
+							</div>
+
+						<!-- </div> -->
+						<div class="header-search">
+							<div class="search-switcher">
+								<span class="icon-search"><?php echo $this->__('Search') ?><i class="fa fa-search"></i></span>
+								<div class="dropdown-switcher">
+									<?php echo $this->getChildHtml('topSearch') ?>
+								</div>
+							</div>
+						</div>
+						<div class="header-link-social">
+							<div class="link-social">
+								<ul class="link-list">
+									<li class="link-icon">
+										<a class="fa fa-facebook" title="facebook"><span class="hidden">hidden</span></a>
+									</li>
+									<li class="link-icon">
+										<a class="fa fa-twitter" title="twitter"><span class="hidden">hidden</span></a>
+									</li>
+									<li class="link-icon">
+										<a class="fa fa-linkedin" title="linkedin"><span class="hidden">hidden</span></a>
+									</li>
+									<li class="link-icon">
+										<a class="fa fa-rss" title="rss"><span class="hidden">hidden</span></a>
+									</li>
+									<li class="link-icon">
+										<a class="fa fa-dribbble" title="dribbble"><span class="hidden">hidden</span></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="menu-mobile"></div>
+					</div>
+				<!-- </div> -->
+			</div>
+		</div>
+
+		<?php echo $this->getChildHtml('topContainer'); ?>
+	</div>
+</div>
+
